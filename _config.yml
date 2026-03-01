@@ -1,0 +1,14 @@
+title: "AutoLab Studio"
+description: "Python 자동화 · 크롤링 · Selenium 매크로 제작"
+lang: "ko-KR"
+timezone: Asia/Seoul
+
+# 프로젝트 Pages 기준 (https://autolab-studio.github.io/)
+url: "https://autolab-studio.github.io"
+baseurl: "/"
+
+# 블로그 글 URL 예쁘게
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-sitemap

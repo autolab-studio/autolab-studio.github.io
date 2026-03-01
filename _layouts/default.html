@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  {% if page.is_home %}
+    <meta name="keywords" content="업무 자동화, 자동화 프로그램 제작, 웹 크롤링, 매크로 제작, Selenium 자동화">
+  {% endif %}
+  <!-- OG -->
+  <meta property="og:title" content="{{ page.title | default: site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+
+      <nav class="nav">
+        <a href="{{ '/' | relative_url }}">홈</a>
+        <a href="{{ '/services/' | relative_url }}">서비스</a>
+        <a href="{{ '/blog/' | relative_url }}">블로그</a>
+        <a href="{{ '/contact/' | relative_url }}">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  {% if page.is_home %}
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="hero-title">업무 자동화 · 크롤링 · 매크로 제작 및 판매</h1>
+      <p class="hero-sub">납품 후 오류, 버그 100% 무한 수정</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="{{ '/contact/' | relative_url }}">상담 문의하기</a>
+        <a class="btn" href="{{ '/services/' | relative_url }}">서비스 및 개발자 보기</a>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <main class="wrap content">
+    {{ content }}
+  </main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+
+    <div class="footer-brand">
+      <strong>상호 : 팡데브(pangdev)</strong>
+      <span class="bizno">사업자등록번호: 603-17-38017<a href="{{ '/business/' | relative_url }}">(사업자 정보)</a></span>
+    </div>
+
+    <div class="muted copyright">
+      © {{ site.time | date: "%Y" }} AutoLab Studio
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
