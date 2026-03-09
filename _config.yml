@@ -12,3 +12,5 @@ permalink: /blog/:title/
 
 plugins:
   - jekyll-sitemap
+
+og_image: /assets/image/home-og.png
