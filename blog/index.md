@@ -5,7 +5,7 @@ description: "자동화 프로그램 제작 사례와 정보"
 ---
 
 <div class="card">
-  <h2>블로그 전체보기</h2>
+  <h2>프로그램 제작 사례</h2>
 
   <div class="post-grid">
     {% for post in site.posts %}

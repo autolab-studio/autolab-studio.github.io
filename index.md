@@ -51,10 +51,10 @@ is_home: true
   <h2>개발자 소개</h2>
 
   <ul>
-    <li><b>건국대학교 서울캠퍼스 컴퓨터공학과</b> 학사 · 석사 졸업</li>
-    <li><b>앱 개발 경력 3년</b></li>
+    <li><b>학력</b>: 건국대학교 서울캠퍼스 컴퓨터공학과 (학사 · 석사 졸업)</li>
+    <li><b>경력</b>: 앱 개발 경력 <b>4년 이상</b></li>
     <li><b>자동화 프로그램 개발 경험 다수</b></li>
-    <li><b>크몽 작업 50회+</b>, 만족도 <b>100%</b></li>
+    <li><b>크몽</b>: 작업 <b>50회+</b>, 만족도 <b>100%</b></li>
   </ul>
 
   <p class="muted">
@@ -85,6 +85,6 @@ is_home: true
   </div>
 
   <p class="muted" style="margin-top:10px;">
-    <a href="{{ '/blog/' | relative_url }}">블로그 전체 보기 →</a>
+    <a href="{{ '/blog/' | relative_url }}">프로그램 제작 사례 더보기 →</a>
   </p>
 </div>
