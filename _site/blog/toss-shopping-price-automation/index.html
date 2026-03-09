@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/png" href="/assets/image/favicon.png">
+  <title>토스 쇼핑 기간판매가 자동화 프로그램 (가격 일괄 수정 매크로) | AutoLab Studio</title>
+  <meta name="description" content="토스 쇼핑 판매자센터에서 기간판매가를 자동으로 입력하고 수정하는 Selenium 기반 자동화 프로그램. 엑셀 기반으로 여러 상품 가격을 한번에 변경할 수 있습니다." />
+  <link rel="canonical" href="http://localhost:4000/blog/toss-shopping-price-automation/" />
+  
+  <!-- OG -->
+  <meta property="og:title" content="토스 쇼핑 기간판매가 자동화 프로그램 (가격 일괄 수정 매크로)" />
+  <meta property="og:description" content="토스 쇼핑 판매자센터에서 기간판매가를 자동으로 입력하고 수정하는 Selenium 기반 자동화 프로그램. 엑셀 기반으로 여러 상품 가격을 한번에 변경할 수 있습니다." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000/blog/toss-shopping-price-automation/" />
+  <meta property="og:image" content="http://localhost:4000/assets/image/toss-shopping-price-automation-thumb.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="토스 쇼핑 기간판매가 자동화 프로그램 (가격 일괄 수정 매크로)">
+  <meta name="twitter:description" content="토스 쇼핑 판매자센터에서 기간판매가를 자동으로 입력하고 수정하는 Selenium 기반 자동화 프로그램. 엑셀 기반으로 여러 상품 가격을 한번에 변경할 수 있습니다.">
+  <meta name="twitter:image" content="http://localhost:4000/assets/image/toss-shopping-price-automation-thumb.png">
+  
+  <meta name="google-site-verification" content="5aPFxu3TI3RpgdOGEZzP4sqZWD6wy2TdQxRHQgp2eGw" />
+  <meta name="robots" content="index,follow">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/">AutoLab Studio</a>
+
+      <nav class="nav">
+        <a href="/">홈</a>
+        <a href="/services/">서비스</a>
+        <a href="/blog/">블로그</a>
+        <a href="/contact/">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  
+
+  <main class="wrap content">
+    <article class="post-article">
+  <header class="card">
+    <h1>토스 쇼핑 기간판매가 자동화 프로그램 (가격 일괄 수정 매크로)</h1>
+    
+      <p class="post-meta">2026-03-10</p>
+    
+  </header>
+
+  <div class="card post-content">
+    <figure style="text-align:center; margin:20px 0;">
+  <img src="/assets/image/toss-shopping-price-automation.png" alt="토스 쇼핑 기간판매가 자동화 프로그램 화면" style="width:100%; max-width:720px; border-radius:12px;" />
+  <figcaption class="muted" style="margin-top:8px;">토스 쇼핑 기간판매가 자동화 프로그램 화면</figcaption>
+</figure>
+
+<h1 id="토스-쇼핑-기간판매가-자동화-프로그램">토스 쇼핑 기간판매가 자동화 프로그램</h1>
+
+<p>온라인 쇼핑몰을 운영하다 보면<br />
+다음과 같은 작업을 자주 하게 됩니다.</p>
+
+<ul>
+  <li>이벤트 기간 할인 가격 설정</li>
+  <li>여러 상품의 가격 수정</li>
+  <li>옵션별 가격 변경</li>
+  <li>기간판매가 등록</li>
+</ul>
+
+<p>하지만 판매자센터에서 이러한 작업을 하나씩 진행하면<br />
+<strong>상품 수가 많을수록 작업 시간이 크게 증가합니다.</strong></p>
+
+<p>이번에 소개하는 프로그램은<br />
+토스 쇼핑 판매자센터에서 <strong>기간판매가를 자동으로 입력하고 수정하는 자동화 프로그램</strong>입니다.</p>
+
+<hr />
+
+<h1 id="프로그램-주요-기능">프로그램 주요 기능</h1>
+
+<p>이 프로그램은 토스 쇼핑 판매자센터에서 가격 수정 작업을 자동화합니다.</p>
+
+<h3 id="1️⃣-엑셀-기반-가격-수정">1️⃣ 엑셀 기반 가격 수정</h3>
+
+<p>상품 정보와 가격을 엑셀 파일로 관리합니다.</p>
+
+<p>예시</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>상품ID</th>
+      <th>옵션ID</th>
+      <th>판매가</th>
+      <th>기간판매가</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>123456</td>
+      <td>111</td>
+      <td>29000</td>
+      <td>19900</td>
+    </tr>
+    <tr>
+      <td>123456</td>
+      <td>222</td>
+      <td>29000</td>
+      <td>19900</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>이 엑셀 파일을 프로그램에 입력하면<br />
+자동으로 가격 수정 작업이 진행됩니다.</p>
+
+<hr />
+
+<h3 id="2️⃣-기간판매가-자동-등록">2️⃣ 기간판매가 자동 등록</h3>
+
+<p>프로그램이 판매자센터에 접속하여</p>
+
+<ul>
+  <li>상품 검색</li>
+  <li>옵션 선택</li>
+  <li>기간판매가 입력</li>
+  <li>저장</li>
+</ul>
+
+<p>과정을 자동으로 수행합니다.</p>
+
+<hr />
+
+<h3 id="3️⃣-다수-상품-자동-처리">3️⃣ 다수 상품 자동 처리</h3>
+
+<p>여러 상품을 한 번에 처리할 수 있습니다.</p>
+
+<p>예를 들어</p>
+
+<ul>
+  <li>이벤트 할인</li>
+  <li>시즌 할인</li>
+  <li>대량 가격 조정</li>
+</ul>
+
+<p>등을 진행할 때 매우 유용합니다.</p>
+
+<hr />
+
+<h3 id="4️⃣-작업-상태-자동-기록">4️⃣ 작업 상태 자동 기록</h3>
+
+<p>작업이 완료되면</p>
+
+<ul>
+  <li>작업 여부</li>
+  <li>결과 가격</li>
+</ul>
+
+<p>등이 엑셀에 자동으로 기록됩니다.</p>
+
+<p>이렇게 하면 어떤 상품이 수정되었는지 쉽게 확인할 수 있습니다.</p>
+
+<hr />
+
+<h1 id="프로그램-특징">프로그램 특징</h1>
+
+<p>이 프로그램은 <strong>Python Selenium 기반 자동화 프로그램</strong>입니다.</p>
+
+<p>주요 특징은 다음과 같습니다.</p>
+
+<ul>
+  <li>토스 쇼핑 판매자센터 자동 로그인</li>
+  <li>상품 자동 검색</li>
+  <li>옵션 자동 선택</li>
+  <li>기간판매가 자동 입력</li>
+  <li>엑셀 기반 작업 관리</li>
+  <li>작업 결과 기록</li>
+</ul>
+
+<hr />
+
+<h1 id="활용-가능한-상황">활용 가능한 상황</h1>
+
+<p>이 프로그램은 다음과 같은 상황에서 활용할 수 있습니다.</p>
+
+<ul>
+  <li>쇼핑몰 할인 이벤트 가격 설정</li>
+  <li>대량 상품 가격 수정</li>
+  <li>옵션 가격 일괄 변경</li>
+  <li>쇼핑몰 운영 자동화</li>
+</ul>
+
+<p>특히 상품 수가 많은 쇼핑몰 운영자에게<br />
+<strong>작업 시간을 크게 줄여주는 프로그램입니다.</strong></p>
+
+  </div>
+
+  <div class="card post-cta">
+    <h2>이와 비슷한 프로그램이 필요하신가요?</h2>
+    <p class="muted">
+      이 제품에 대한 문의나 비슷한 자동화 프로그램 제작이 필요하시면 편하게 상담 문의 주세요.
+    </p>
+    <a class="btn primary" href="/contact/">문의하기</a>
+  </div>
+</article>
+  </main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+
+    <div class="footer-brand">
+      <strong>상호 : 팡데브(pangdev)</strong>
+      <span class="bizno">사업자등록번호: 603-17-38017<a href="/business/">(사업자 정보)</a></span>
+    </div>
+
+    <div class="muted copyright">
+      © 2026 AutoLab Studio
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
