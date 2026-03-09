@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post-article">
+  <header class="card">
+    <h1>{{ page.title }}</h1>
+    {% if page.date %}
+      <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p>
+    {% endif %}
+  </header>
+
+  <div class="card post-content">
+    {{ content }}
+  </div>
+
+  <div class="card post-cta">
+    <h2>이와 비슷한 프로그램이 필요하신가요?</h2>
+    <p class="muted">
+      이 제품에 대한 문의나 비슷한 자동화 프로그램 제작이 필요하시면 편하게 상담 문의 주세요.
+    </p>
+    <a class="btn primary" href="{{ '/contact/' | relative_url }}">문의하기</a>
+  </div>
+</article>

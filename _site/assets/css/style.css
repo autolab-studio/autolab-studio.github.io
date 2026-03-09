@@ -79,3 +79,20 @@ a{color:inherit}
     background: #fff;
     display: block;
   }
+  .post-article{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  
+  .post-content h2:first-child{
+    margin-top:0;
+  }
+  
+  .post-cta{
+    text-align:center;
+  }
+  
+  .post-cta .btn{
+    margin-top:10px;
+  }
