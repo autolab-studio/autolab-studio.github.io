@@ -6,19 +6,21 @@ description: "자동화 프로그램 제작 사례와 정보"
 
 <div class="card">
   <h2>블로그 전체보기</h2>
-  <div class="blog-gallery">
+
+  <div class="post-grid">
     {% for post in site.posts %}
-      <a class="blog-card" href="{{ post.url | relative_url }}">
-        <div class="blog-thumb">
+      <a class="post-card" href="{{ post.url | relative_url }}">
+        <div class="post-thumb">
           {% if post.thumbnail %}
             <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}">
           {% else %}
-            <img src="{{ '/assets/image/blog/default-thumb.png' | relative_url }}" alt="{{ post.title }}">
+            <div class="post-thumb-fallback">No Image</div>
           {% endif %}
         </div>
-        <div class="blog-card-body">
-          <div class="blog-card-title">{{ post.title }}</div>
-          <div class="blog-card-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+
+        <div class="post-info">
+          <div class="post-title">{{ post.title }}</div>
+          <div class="post-date">{{ post.date | date: "%Y-%m-%d" }}</div>
         </div>
       </a>
     {% endfor %}
